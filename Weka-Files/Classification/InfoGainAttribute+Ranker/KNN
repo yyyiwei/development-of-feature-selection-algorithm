@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     wdbc-weka.filters.supervised.instance.Resample-B1.0-S1-Z125.484-weka.filters.unsupervised.attribute.Remove-R2,5,9-10,12,15-20,22,26,29-30
+Instances:    714
+Attributes:   16
+              radius_mean
+              perimeter_mean
+              area_mean
+              compactness_mean
+              concavity_mean
+              concave points_mean
+              radius_se
+              perimeter_se
+              area_se
+              radius_worst
+              perimeter_worst
+              area_worst
+              smoothness_worst
+              concavity_worst
+              concave points_worst
+              diagnosis
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         697               97.619  %
+Incorrectly Classified Instances        17                2.381  %
+Kappa statistic                          0.9524
+Mean absolute error                      0.0249
+Root mean squared error                  0.1541
+Relative absolute error                  4.974  %
+Root relative squared error             30.8283 %
+Total Number of Instances              714     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.980    0.028    0.972      0.980    0.976      0.952    0.976     0.967     M
+                 0.972    0.020    0.980      0.972    0.976      0.952    0.976     0.973     B
+Weighted Avg.    0.976    0.024    0.976      0.976    0.976      0.952    0.976     0.970     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 350   7 |   a = M
+  10 347 |   b = B
+

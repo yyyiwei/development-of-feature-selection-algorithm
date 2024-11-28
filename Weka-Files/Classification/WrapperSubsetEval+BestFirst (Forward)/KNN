@@ -1,0 +1,52 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     wdbc-weka.filters.supervised.instance.Resample-B1.0-S1-Z125.484-weka.filters.unsupervised.attribute.Remove-R2,5-13,15-16,18-21,23,25,27,30
+Instances:    714
+Attributes:   11
+              radius_mean
+              perimeter_mean
+              area_mean
+              area_se
+              concavity_se
+              texture_worst
+              area_worst
+              compactness_worst
+              concave points_worst
+              symmetry_worst
+              diagnosis
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         703               98.4594 %
+Incorrectly Classified Instances        11                1.5406 %
+Kappa statistic                          0.9692
+Mean absolute error                      0.0165
+Root mean squared error                  0.124 
+Relative absolute error                  3.2978 %
+Root relative squared error             24.7971 %
+Total Number of Instances              714     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.980    0.011    0.989      0.980    0.985      0.969    0.984     0.984     M
+                 0.989    0.020    0.981      0.989    0.985      0.969    0.984     0.978     B
+Weighted Avg.    0.985    0.015    0.985      0.985    0.985      0.969    0.984     0.981     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 350   7 |   a = M
+   4 353 |   b = B
+

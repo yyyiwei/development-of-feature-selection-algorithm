@@ -1,0 +1,59 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     wdbc-weka.filters.supervised.instance.Resample-B1.0-S1-Z125.484-weka.filters.unsupervised.attribute.Remove-R2,5,9-10,12,15-20,22,26,29-30
+Instances:    714
+Attributes:   16
+              radius_mean
+              perimeter_mean
+              area_mean
+              compactness_mean
+              concavity_mean
+              concave points_mean
+              radius_se
+              perimeter_se
+              area_se
+              radius_worst
+              perimeter_worst
+              area_worst
+              smoothness_worst
+              concavity_worst
+              concave points_worst
+              diagnosis
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.16 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         705               98.7395 %
+Incorrectly Classified Instances         9                1.2605 %
+Kappa statistic                          0.9748
+Mean absolute error                      0.0385
+Root mean squared error                  0.1184
+Relative absolute error                  7.6918 %
+Root relative squared error             23.6803 %
+Total Number of Instances              714     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.986    0.011    0.989      0.986    0.987      0.975    0.997     0.997     M
+                 0.989    0.014    0.986      0.989    0.987      0.975    0.997     0.995     B
+Weighted Avg.    0.987    0.013    0.987      0.987    0.987      0.975    0.997     0.996     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 352   5 |   a = M
+   4 353 |   b = B
+

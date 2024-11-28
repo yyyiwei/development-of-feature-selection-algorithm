@@ -1,0 +1,97 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     wdbc-weka.filters.supervised.instance.Resample-B1.0-S1-Z125.484-weka.filters.unsupervised.attribute.Remove-R2,5,9-10,12,15-20,22,26,29-30
+Instances:    714
+Attributes:   16
+              radius_mean
+              perimeter_mean
+              area_mean
+              compactness_mean
+              concavity_mean
+              concave points_mean
+              radius_se
+              perimeter_se
+              area_se
+              radius_worst
+              perimeter_worst
+              area_worst
+              smoothness_worst
+              concavity_worst
+              concave points_worst
+              diagnosis
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                         Class
+Variable                                     M
+==============================================
+radius_mean                          -190.1335
+perimeter_mean                         97.6002
+area_mean                              46.1153
+compactness_mean                      -29.3554
+concavity_mean                         -17.968
+concave points_mean                      33.38
+radius_se                             -60.4924
+perimeter_se                          -22.0344
+area_se                               260.0772
+radius_worst                           55.1894
+perimeter_worst                        39.7599
+area_worst                            -18.9583
+smoothness_worst                        7.2317
+concavity_worst                        32.1248
+concave points_worst                    -0.567
+Intercept                             -12.3716
+
+
+Odds Ratios...
+                                         Class
+Variable                                     M
+==============================================
+radius_mean                                  0
+perimeter_mean           2.4390146339144458E42
+area_mean                1.0656692942560317E20
+compactness_mean                             0
+concavity_mean                               0
+concave points_mean      3.1386134602566775E14
+radius_se                                    0
+perimeter_se                                 0
+area_se                  8.914495916584525E112
+radius_worst              9.298933843955972E23
+perimeter_worst         1.85139498262525888E17
+area_worst                                   0
+smoothness_worst                     1382.6034
+concavity_worst           8.945971529617569E13
+concave points_worst                    0.5672
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         681               95.3782 %
+Incorrectly Classified Instances        33                4.6218 %
+Kappa statistic                          0.9076
+Mean absolute error                      0.0494
+Root mean squared error                  0.1767
+Relative absolute error                  9.8773 %
+Root relative squared error             35.3409 %
+Total Number of Instances              714     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.947    0.039    0.960      0.947    0.953      0.908    0.990     0.993     M
+                 0.961    0.053    0.948      0.961    0.954      0.908    0.990     0.979     B
+Weighted Avg.    0.954    0.046    0.954      0.954    0.954      0.908    0.990     0.986     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 338  19 |   a = M
+  14 343 |   b = B
+

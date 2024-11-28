@@ -1,0 +1,67 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.WrapperSubsetEval -B weka.classifiers.functions.SMO -F 10 -T 0.01 -R 1 -E DEFAULT -- -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     wdbc-weka.filters.supervised.instance.Resample-B1.0-S1-Z125.484
+Instances:    714
+Attributes:   31
+              radius_mean
+              texture_mean
+              perimeter_mean
+              area_mean
+              smoothness_mean
+              compactness_mean
+              concavity_mean
+              concave points_mean
+              symmetry_mean
+              fractal_dimension_mean
+              radius_se
+              texture_se
+              perimeter_se
+              area_se
+              smoothness_se
+              compactness_se
+              concavity_se
+              concave points_se
+              symmetry_se
+              fractal_dimension_se
+              radius_worst
+              texture_worst
+              perimeter_worst
+              area_worst
+              smoothness_worst
+              compactness_worst
+              concavity_worst
+              concave points_worst
+              symmetry_worst
+              fractal_dimension_worst
+              diagnosis
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 282
+	Merit of best subset found:    0.979
+
+Attribute Subset Evaluator (supervised, Class (nominal): 31 diagnosis):
+	Wrapper Subset Evaluator
+	Learning scheme: weka.classifiers.functions.SMO
+	Scheme options: -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007 -calibrator weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4 
+	Subset evaluation: classification accuracy
+	Number of folds for accuracy estimation: 10
+
+Selected attributes: 13,21,22,23,25,27 : 6
+                     perimeter_se
+                     radius_worst
+                     texture_worst
+                     perimeter_worst
+                     smoothness_worst
+                     concavity_worst
+

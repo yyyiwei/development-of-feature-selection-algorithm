@@ -1,0 +1,151 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     wdbc-weka.filters.supervised.instance.Resample-B1.0-S1-Z125.484-weka.filters.unsupervised.attribute.Remove-R2,5,9-10,12,15-20,22,26,29-30
+Instances:    714
+Attributes:   16
+              radius_mean
+              perimeter_mean
+              area_mean
+              compactness_mean
+              concavity_mean
+              concave points_mean
+              radius_se
+              perimeter_se
+              area_se
+              radius_worst
+              perimeter_worst
+              area_worst
+              smoothness_worst
+              concavity_worst
+              concave points_worst
+              diagnosis
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                         Class
+Attribute                    M       B
+                         (0.5)   (0.5)
+=======================================
+radius_mean
+  mean                    0.495  0.2408
+  std. dev.              0.1546  0.0853
+  weight sum                357     357
+  precision              0.0029  0.0029
+
+perimeter_mean
+  mean                   0.4935  0.2332
+  std. dev.              0.1548  0.0823
+  weight sum                357     357
+  precision              0.0027  0.0027
+
+area_mean
+  mean                   0.3532   0.133
+  std. dev.                0.16  0.0571
+  weight sum                357     357
+  precision              0.0026  0.0026
+
+compactness_mean
+  mean                   0.3861  0.1861
+  std. dev.              0.1649  0.1062
+  weight sum                357     357
+  precision              0.0026  0.0026
+
+concavity_mean
+  mean                   0.3795  0.1063
+  std. dev.              0.1831   0.105
+  weight sum                357     357
+  precision              0.0026  0.0026
+
+concave points_mean
+  mean                   0.4414  0.1253
+  std. dev.              0.1798  0.0777
+  weight sum                357     357
+  precision              0.0026  0.0026
+
+radius_se
+  mean                   0.1807  0.0644
+  std. dev.              0.1313  0.0424
+  weight sum                357     357
+  precision              0.0026  0.0026
+
+perimeter_se
+  mean                   0.1692  0.0593
+  std. dev.              0.1248  0.0385
+  weight sum                357     357
+  precision              0.0026  0.0026
+
+area_se
+  mean                   0.1232  0.0274
+  std. dev.              0.1225  0.0166
+  weight sum                357     357
+  precision              0.0026  0.0026
+
+radius_worst
+  mean                   0.4702  0.1917
+  std. dev.              0.1509  0.0711
+  weight sum                357     357
+  precision               0.003   0.003
+
+perimeter_worst
+  mean                   0.4545  0.1796
+  std. dev.              0.1457  0.0674
+  weight sum                357     357
+  precision              0.0027  0.0027
+
+area_worst
+  mean                   0.3034  0.0907
+  std. dev.              0.1472  0.0404
+  weight sum                357     357
+  precision              0.0026  0.0026
+
+smoothness_worst
+  mean                   0.4918  0.3658
+  std. dev.              0.1429  0.1371
+  weight sum                357     357
+  precision              0.0032  0.0032
+
+concavity_worst
+  mean                   0.3608  0.1283
+  std. dev.              0.1327  0.1006
+  weight sum                357     357
+  precision              0.0025  0.0025
+
+concave points_worst
+  mean                   0.6309  0.2519
+  std. dev.              0.1584  0.1207
+  weight sum                357     357
+  precision              0.0028  0.0028
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         667               93.4174 %
+Incorrectly Classified Instances        47                6.5826 %
+Kappa statistic                          0.8683
+Mean absolute error                      0.066 
+Root mean squared error                  0.2446
+Relative absolute error                 13.1974 %
+Root relative squared error             48.917  %
+Total Number of Instances              714     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.899    0.031    0.967      0.899    0.932      0.870    0.984     0.981     M
+                 0.969    0.101    0.906      0.969    0.936      0.870    0.983     0.985     B
+Weighted Avg.    0.934    0.066    0.936      0.934    0.934      0.870    0.984     0.983     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 321  36 |   a = M
+  11 346 |   b = B
+

@@ -1,0 +1,84 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.InfoGainAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     wdbc-weka.filters.supervised.instance.Resample-B1.0-S1-Z125.484
+Instances:    714
+Attributes:   31
+              radius_mean
+              texture_mean
+              perimeter_mean
+              area_mean
+              smoothness_mean
+              compactness_mean
+              concavity_mean
+              concave points_mean
+              symmetry_mean
+              fractal_dimension_mean
+              radius_se
+              texture_se
+              perimeter_se
+              area_se
+              smoothness_se
+              compactness_se
+              concavity_se
+              concave points_se
+              symmetry_se
+              fractal_dimension_se
+              radius_worst
+              texture_worst
+              perimeter_worst
+              area_worst
+              smoothness_worst
+              compactness_worst
+              concavity_worst
+              concave points_worst
+              symmetry_worst
+              fractal_dimension_worst
+              diagnosis
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 31 diagnosis):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.7542   23 perimeter_worst
+ 0.7244   24 area_worst
+ 0.7126   21 radius_worst
+ 0.6969   28 concave points_worst
+ 0.6893    8 concave points_mean
+ 0.6058    3 perimeter_mean
+ 0.5641    4 area_mean
+ 0.5625    1 radius_mean
+ 0.5536    7 concavity_mean
+ 0.5536   14 area_se
+ 0.55     27 concavity_worst
+ 0.4285   13 perimeter_se
+ 0.3981   26 compactness_worst
+ 0.3588   11 radius_se
+ 0.3467    6 compactness_mean
+ 0.2512   17 concavity_se
+ 0.2456    2 texture_mean
+ 0.2255   22 texture_worst
+ 0.2164   18 concave points_se
+ 0.2095   29 symmetry_worst
+ 0.179     9 symmetry_mean
+ 0.1635   16 compactness_se
+ 0.1525   25 smoothness_worst
+ 0.1514    5 smoothness_mean
+ 0.1118   30 fractal_dimension_worst
+ 0.067    20 fractal_dimension_se
+ 0.0507   19 symmetry_se
+ 0.0431   15 smoothness_se
+ 0.0276   10 fractal_dimension_mean
+ 0        12 texture_se
+
+Selected attributes: 23,24,21,28,8,3,4,1,7,14,27,13,26,11,6,17,2,22,18,29,9,16,25,5,30,20,19,15,10,12 : 30
+

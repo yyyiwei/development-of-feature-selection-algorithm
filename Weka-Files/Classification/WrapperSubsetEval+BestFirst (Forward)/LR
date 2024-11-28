@@ -1,0 +1,73 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     wdbc-weka.filters.supervised.instance.Resample-B1.0-S1-Z125.484-weka.filters.unsupervised.attribute.Remove-R2,4-6,8-21,25-27,29-30
+Instances:    714
+Attributes:   8
+              radius_mean
+              perimeter_mean
+              concavity_mean
+              texture_worst
+              perimeter_worst
+              area_worst
+              concave points_worst
+              diagnosis
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                       Class
+Variable                                   M
+============================================
+radius_mean                         -25.9799
+perimeter_mean                       -6.2908
+concavity_mean                        4.4732
+texture_worst                        10.4316
+perimeter_worst                        2.414
+area_worst                           96.4286
+concave points_worst                  9.6601
+Intercept                           -13.4213
+
+
+Odds Ratios...
+                                       Class
+Variable                                   M
+============================================
+radius_mean                                0
+perimeter_mean                        0.0019
+concavity_mean                       87.6401
+texture_worst                     33913.8261
+perimeter_worst                      11.1782
+area_worst              7.557946561047214E41
+concave points_worst              15679.7467
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         700               98.0392 %
+Incorrectly Classified Instances        14                1.9608 %
+Kappa statistic                          0.9608
+Mean absolute error                      0.0399
+Root mean squared error                  0.1339
+Relative absolute error                  7.9723 %
+Root relative squared error             26.7794 %
+Total Number of Instances              714     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.975    0.014    0.986      0.975    0.980      0.961    0.992     0.995     M
+                 0.986    0.025    0.975      0.986    0.981      0.961    0.992     0.972     B
+Weighted Avg.    0.980    0.020    0.980      0.980    0.980      0.961    0.992     0.984     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 348   9 |   a = M
+   5 352 |   b = B
+

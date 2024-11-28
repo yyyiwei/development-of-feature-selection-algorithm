@@ -1,0 +1,88 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     wdbc-weka.filters.supervised.instance.Resample-B1.0-S1-Z125.484-weka.filters.unsupervised.attribute.Remove-R1-9,11,13-18,20-21,24,26-30
+Instances:    714
+Attributes:   7
+              fractal_dimension_mean
+              texture_se
+              symmetry_se
+              texture_worst
+              perimeter_worst
+              smoothness_worst
+              diagnosis
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                           Class
+Attribute                      M       B
+                           (0.5)   (0.5)
+=========================================
+fractal_dimension_mean
+  mean                     0.2675  0.2766
+  std. dev.                0.1594  0.1518
+  weight sum                  357     357
+  precision                0.0028  0.0028
+
+texture_se
+  mean                     0.1812  0.1904
+  std. dev.                0.1083  0.1353
+  weight sum                  357     357
+  precision                0.0027  0.0027
+
+symmetry_se
+  mean                     0.1722  0.1801
+  std. dev.                0.1348   0.097
+  weight sum                  357     357
+  precision                0.0028  0.0028
+
+texture_worst
+  mean                     0.4532  0.3013
+  std. dev.                0.1395  0.1409
+  weight sum                  357     357
+  precision                0.0023  0.0023
+
+perimeter_worst
+  mean                     0.4545  0.1796
+  std. dev.                0.1457  0.0674
+  weight sum                  357     357
+  precision                0.0027  0.0027
+
+smoothness_worst
+  mean                     0.4918  0.3658
+  std. dev.                0.1429  0.1371
+  weight sum                  357     357
+  precision                0.0032  0.0032
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         693               97.0588 %
+Incorrectly Classified Instances        21                2.9412 %
+Kappa statistic                          0.9412
+Mean absolute error                      0.0717
+Root mean squared error                  0.1589
+Relative absolute error                 14.3452 %
+Root relative squared error             31.7822 %
+Total Number of Instances              714     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.966    0.025    0.975      0.966    0.970      0.941    0.992     0.994     M
+                 0.975    0.034    0.967      0.975    0.971      0.941    0.992     0.987     B
+Weighted Avg.    0.971    0.029    0.971      0.971    0.971      0.941    0.992     0.990     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 345  12 |   a = M
+   9 348 |   b = B
+
